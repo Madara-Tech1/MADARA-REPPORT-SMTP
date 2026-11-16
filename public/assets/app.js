@@ -1,7 +1,7 @@
 "use strict";
 
 // ⚠️ Remplace par le lien de TA chaîne WhatsApp
-const CHANNEL_URL = "https://whatsapp.com/channel/XXXXXXXXXXXXXXXX";
+const CHANNEL_URL = "https://whatsapp.com/channel/0029VbAzHEiA2pLFh3XWps0x";
 const MIN_SECONDS = 10;       // temps minimum après avoir quitté la page
 const FALLBACK_SECONDS = 30;  // si la sortie de page n'est pas détectée
 const COOLDOWN_SECONDS = 30;  // pause entre deux envois
@@ -275,7 +275,7 @@ form.addEventListener("submit", async (e) => {
   const out = await request;
 
   if (out.ok) {
-    await term.print("[SUCCESS 😂]", "ok");
+    await term.print("[SUCCESS ✔️]", "ok");
     setBar(100);
     show("Envoyé (" + out.data.sent + " e-mail).", "success");
     addHistory(number);
