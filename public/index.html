@@ -3,57 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#02070a">
+  <meta name="theme-color" content="#060014">
   <title>MADARA HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/anim.css">
 </head>
 <body>
   <main class="wrap">
     <div class="eye"></div>
-    <h1>MADARA <span>HUB</span></h1>
+    <h1><span class="madara">MADARA</span> <span class="hub">HUB</span></h1>
+    <div class="line-deco"></div>
 
-    <!-- ÉCRAN DE BLOCAGE -->
     <section id="gate" class="card">
+      <div class="corner-br"></div>
       <h2>Accès verrouillé</h2>
       <p class="gate-text">Rejoins ma chaîne WhatsApp pour débloquer le panneau.</p>
-
       <a id="channelLink" class="btn-link" href="#" target="_blank" rel="noopener">
         REJOINDRE LA CHAÎNE
       </a>
-
       <button id="verifyBtn" type="button" disabled>J'AI REJOINT</button>
       <div id="gateInfo" class="info">Clique d'abord sur « Rejoindre la chaîne ».</div>
-
       <div class="terminal">
         <div class="term-bar"><i></i><i></i><i></i><span>auth@madara</span></div>
         <div class="term-body" id="gateBody"></div>
       </div>
     </section>
 
-    <!-- PANNEAU -->
     <section id="panel" hidden>
       <p class="sub">Entre un numéro, le message part tout seul.</p>
-
       <form id="form" class="card">
+        <div class="corner-br"></div>
         <label for="number">Numéro</label>
         <input id="number" type="tel" inputmode="numeric"
                placeholder="50947296896" maxlength="20" required>
-
         <label for="key">Clé d'accès</label>
         <input id="key" type="password" placeholder="Clé d'accès" autocomplete="off">
-
         <button id="btn" type="submit">ENVOYER</button>
         <div id="result" role="status"></div>
       </form>
-
       <div class="terminal">
         <div class="term-bar"><i></i><i></i><i></i><span>madara@hub:~</span></div>
         <div class="term-body" id="termBody"></div>
         <div class="progress"><div id="bar"></div></div>
       </div>
-
       <div class="card history">
+        <div class="corner-br"></div>
         <h3>Derniers numéros</h3>
         <ul id="historyList"></ul>
       </div>
@@ -63,4 +59,4 @@
   </main>
   <script src="assets/app.js"></script>
 </body>
-</html>
+  </html>
